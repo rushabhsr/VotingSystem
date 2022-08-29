@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>Voting System</title>
+  </head>
+  <body style="background-image: linear-gradient(gray, white)">
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      const firebaseConfig = {
+        apiKey: "AIzaSyAlhrT1GC9te8-CpcY2sGasxFRrJZhkV98",
+        authDomain: "voting-69c9f.firebaseapp.com",
+        databaseURL: "https://voting-69c9f.firebaseio.com",
+        projectId: "voting-69c9f",
+        storageBucket: "voting-69c9f.appspot.com",
+        messagingSenderId: "480323792730",
+        appId: "1:480323792730:web:ee8ad366e8171cfd67cd63",
+        measurementId: "G-3JS1968PQK",
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="index.js"></script>
+    <table
+      border="1"
+      align="center"
+      style="
+        font-size: 30;
+        width: 300px;
+        background-image: linear-gradient(gray, white);
+        position: fixed;
+        margin-left: -150px; /* half of width */
+        margin-top: -150px; /* half of height */
+        top: 50%;
+        left: 50%;
+      "
+    >
+      <tr>
+        <th
+          colspan="2"
+          align="center"
+          style="color: white; text-shadow: 0 0 3px gray, 0 0 5px white"
+        >
+          Votes
+        </th>
+      </tr>
+      <tr style="color: #3c3c3c; text-shadow: 0 0 3px #ff0000, 0 0 5px #787878">
+        <th>Leading Party:</th>
+        <td id="leader">NA</td>
+      </tr>
+      <tr style="color: #3c3c3c; text-shadow: 0 0 3px #b4b4b4, 0 0 5px #787878">
+        <th>Party 1:</th>
+        <td id="party1">0</td>
+      </tr>
+      <tr style="color: #3c3c3c; text-shadow: 0 0 3px #b4b4b4, 0 0 5px #787878">
+        <th>Party 2:</th>
+        <td id="party2">0</td>
+      </tr>
+      <tr style="color: #3c3c3c; text-shadow: 0 0 3px #b4b4b4, 0 0 5px #787878">
+        <th>Party 3:</th>
+        <td id="party3">0</td>
+      </tr>
+      <tr style="color: #3c3c3c; text-shadow: 0 0 3px #b4b4b4, 0 0 5px #787878">
+        <th>NOTA:</th>
+        <td id="nota">0</td>
+      </tr>
+      <tr style="color: #3c3c3c; text-shadow: 0 0 3px #b4b4b4, 0 0 5px #787878">
+        <th>Total Votes:</th>
+        <td id="total">0</td>
+      </tr>
+    </table>
+  </body>
+</html>
